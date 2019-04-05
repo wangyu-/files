@@ -8,14 +8,14 @@
 #include <assert.h>
 using namespace std;
 
-int prt(int arr[],int n)
+void prt(int arr[],int n)
 {
     for(int i=0;i<n;i++)
         printf("<%d>",arr[i]);
     printf("\n");
 }
 
-int compare_swap(int &a,int &b,bool inv)
+void compare_swap(int &a,int &b,bool inv)
 {
     bool smaller=(a>b);
     if(smaller^inv)
